@@ -56,13 +56,66 @@ endif()
 
 # add cross-platforms source files and header files 
 list(APPEND GAME_SOURCE
-     Classes/AppDelegate.cpp
-     Classes/HelloWorldScene.cpp
-     )
+    Classes/AppDelegate.cpp
+    Classes/Bonus.cpp
+    Classes/BonusBomb.cpp
+    Classes/BonusControlor.cpp
+    Classes/BonusLife.cpp
+    Classes/Boss.cpp
+    Classes/BossControlor.cpp
+    Classes/BossShip.cpp
+    Classes/EnemyBossShipWeapon.cpp
+    Classes/EnemyBossWeapon1.cpp
+    Classes/EnemyBossWeapon2.cpp
+    Classes/EnemyControlor.cpp
+    Classes/EnemyOne.cpp
+    Classes/EnemyThree.cpp
+    Classes/EnemyThreeWeapon.cpp
+    Classes/EnemyThreeWeaponPlus.cpp
+    Classes/EnemyTwo.cpp
+    Classes/EnemyTwoWeapon.cpp
+    Classes/EnemyWeapon1.cpp
+    Classes/Entity.cpp
+    Classes/MainScene.cpp
+    Classes/Phoenix.cpp
+    Classes/PhoenixWeapon.cpp
+    Classes/README.md
+    Classes/SideWeapon.cpp
+    Classes/SpaceShip.cpp
+    Classes/Weapon.cpp
+    Classes/WeaponControlor.cpp
+)
 list(APPEND GAME_HEADER
-     Classes/AppDelegate.h
-     Classes/HelloWorldScene.h
-     )
+    Classes/AppDelegate.h
+    Classes/Bonus.h
+    Classes/BonusBomb.h
+    Classes/BonusControlor.h
+    Classes/BonusLife.h
+    Classes/Boss.h
+    Classes/BossControlor.h
+    Classes/BossShip.h
+    Classes/EnemyBossShipWeapon.h
+    Classes/EnemyBossWeapon1.h
+    Classes/EnemyBossWeapon2.h
+    Classes/EnemyControlor.h
+    Classes/EnemyOne.h
+    Classes/EnemyThree.h
+    Classes/EnemyThreeWeapon.h
+    Classes/EnemyThreeWeaponPlus.h
+    Classes/EnemyTwo.h
+    Classes/EnemyTwoWeapon.h
+    Classes/EnemyWeapon1.h
+    Classes/Entity.h
+    Classes/MainScene.h
+    Classes/Phoenix.h
+    Classes/PhoenixWeapon.h
+    Classes/README.md
+    Classes/resource.h
+    Classes/SideWeapon.h
+    Classes/SpaceShip.h
+    Classes/Weapon.h
+    Classes/WeaponControlor.h
+)
 
 if(ANDROID)
     # change APP_NAME to the share library name for Android, it's value depend on AndroidManifest.xml
