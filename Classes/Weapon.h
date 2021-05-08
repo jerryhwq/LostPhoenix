@@ -1,9 +1,9 @@
 #ifndef __WEAPON_H__
 #define __WEAPON_H__
 
-#include"cocos2d.h"
-#include"Entity.h"
-#include"SpaceShip.h"
+#include "cocos2d.h"
+#include "Entity.h"
+#include "SpaceShip.h"
 
 USING_NS_CC;
 

@@ -1,6 +1,6 @@
 #include "BonusControlor.h"
-#include"SimpleAudioEngine.h"
-#include"Phoenix.h"
+#include "editor-support/cocostudio/SimpleAudioEngine.h"
+#include "Phoenix.h"
 
 bool BonusControlor::init()
 {
@@ -51,7 +51,7 @@ void BonusControlor::update(float dt)
 				CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("./sound/getBonus.wav", false, 1.0f, 0.0f, 1.0f);
 				bonus->giveBonus(m_phoenix);
 				if (bonus->getType() == BONUS_SIDEWEAPOM)
-					this->scheduleOnce(schedule_selector(BonusControlor::sideWeaponOff), 60.0f);
+					this->scheduleOnce(CC_SCHEDULE_SELECTOR(BonusControlor::sideWeaponOff), 60.0f);
 				bonus->remove();
 			}
 		}
@@ -200,7 +200,7 @@ void BonusControlor::bindPlayer(Phoenix * phoenix)
 	m_phoenix = phoenix;
 
 
-	this->schedule(schedule_selector(BonusControlor::creatBonus), (float)(30 + m_phoenix->getDifficulty()));
+	this->schedule(CC_SCHEDULE_SELECTOR(BonusControlor::creatBonus), (float)(30 + m_phoenix->getDifficulty()));
 	this->scheduleUpdate();
 
 }

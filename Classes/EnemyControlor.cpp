@@ -1,7 +1,8 @@
 #include "EnemyControlor.h"
-#include"WeaponControlor.h"
-#include"Phoenix.h"
-#include"SimpleAudioEngine.h"
+#include "WeaponControlor.h"
+#include "Phoenix.h"
+#include "editor-support/cocostudio/SimpleAudioEngine.h"
+#include "scripting/deprecated/CCDeprecated.h"
 
 bool EnemyControlor::init()
 {
@@ -145,7 +146,7 @@ void EnemyControlor::update(float dt)
 				enemyone->dead();
 			}
 		}
-		unscheduleAllSelectors();
+        unscheduleAllCallbacks();
 		unscheduleUpdate();
 	}
 }
@@ -261,15 +262,15 @@ void EnemyControlor::bindPlayer(Phoenix * phoenix)
 	m_phoenix = phoenix;
 
 
-	this->schedule(schedule_selector(EnemyControlor::creatEnemyOne), (float)(7 - (m_phoenix->getDifficulty()/2)) - 0.58*m_phoenix->getLevel());
-	this->schedule(schedule_selector(EnemyControlor::EnemyOneAttackMove), 1.0-(0.12*m_phoenix->getDifficulty()));
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::creatEnemyOne), (float)(7 - (m_phoenix->getDifficulty()/2)) - 0.58*m_phoenix->getLevel());
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::EnemyOneAttackMove), 1.0-(0.12*m_phoenix->getDifficulty()));
 
-	this->schedule(schedule_selector(EnemyControlor::creatEnemyTwo), 4.0 - (float)(m_phoenix->getDifficulty() / 4) - 0.35*m_phoenix->getLevel());
-	this->schedule(schedule_selector(EnemyControlor::EnemyTwoAttackMove), 1.5f);
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::creatEnemyTwo), 4.0 - (float)(m_phoenix->getDifficulty() / 4) - 0.35*m_phoenix->getLevel());
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::EnemyTwoAttackMove), 1.5f);
 
-	this->schedule(schedule_selector(EnemyControlor::creatEnemyThree), 35.0 - (3 * m_phoenix->getDifficulty())-2*m_phoenix->getLevel());
-	this->schedule(schedule_selector(EnemyControlor::EnemyThreeAttackMove), (10.0-m_phoenix->getDifficulty()*1.52));
-	this->schedule(schedule_selector(EnemyControlor::EnemyThreeAttackMovePlus), (6.0 - m_phoenix->getDifficulty()*0.55));
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::creatEnemyThree), 35.0 - (3 * m_phoenix->getDifficulty())-2*m_phoenix->getLevel());
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::EnemyThreeAttackMove), (10.0-m_phoenix->getDifficulty()*1.52));
+	this->schedule(CC_SCHEDULE_SELECTOR(EnemyControlor::EnemyThreeAttackMovePlus), (6.0 - m_phoenix->getDifficulty()*0.55));
 
 	this->scheduleUpdate();
 

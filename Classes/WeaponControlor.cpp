@@ -1,8 +1,8 @@
 #include "WeaponControlor.h"
-#include"EnemyControlor.h"
-#include"BossControlor.h"
-#include"Phoenix.h"
-#include"SimpleAudioEngine.h"
+#include "EnemyControlor.h"
+#include "BossControlor.h"
+#include "Phoenix.h"
+#include "editor-support/cocostudio/SimpleAudioEngine.h"
 
 
 bool WeaponControlor::init()

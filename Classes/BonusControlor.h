@@ -1,8 +1,8 @@
 #ifndef __BONUSCONTROLOR_H__
 #define __BONUSCONTROLOR_H__
 
-#include"cocos2d.h"
-#include"Bonus.h"
+#include "cocos2d.h"
+#include "Bonus.h"
 USING_NS_CC;
 
 class Phoenix;

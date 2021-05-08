@@ -23,16 +23,11 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-
-#include "platform/CCPlatformConfig.h"
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-
 #include <mach/mach_time.h>
 
 #import "platform/ios/CCDirectorCaller-ios.h"
 
 #import <Foundation/Foundation.h>
-#import <OpenGLES/EAGL.h>
 
 #import "base/CCDirector.h"
 #import "platform/ios/CCEAGLView-ios.h"
@@ -136,12 +131,6 @@ static id s_sharedDirectorCaller;
 {
     if (isAppActive) {
         cocos2d::Director* director = cocos2d::Director::getInstance();
-        EAGLContext* cocos2dxContext = [(CCEAGLView*)director->getOpenGLView()->getEAGLView() context];
-        if (cocos2dxContext != [EAGLContext currentContext])
-            glFlush();
-        
-        [EAGLContext setCurrentContext: cocos2dxContext];
-
         CFTimeInterval dt = ((CADisplayLink*)displayLink).timestamp - lastDisplayTime;
         lastDisplayTime = ((CADisplayLink*)displayLink).timestamp;
         director->mainLoop(dt);
@@ -159,6 +148,3 @@ static id s_sharedDirectorCaller;
 }
 
 @end
-
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-

@@ -44,13 +44,7 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
     // Initialize the CCEAGLView
-    CCEAGLView *eaglView = [CCEAGLView viewWithFrame: [UIScreen mainScreen].bounds
-                                         pixelFormat: (__bridge NSString *)cocos2d::GLViewImpl::_pixelFormat
-                                         depthFormat: cocos2d::GLViewImpl::_depthFormat
-                                  preserveBackbuffer: NO
-                                          sharegroup: nil
-                                       multiSampling: cocos2d::GLViewImpl::_multisamplingCount > 0 ? YES : NO
-                                     numberOfSamples: cocos2d::GLViewImpl::_multisamplingCount ];
+    CCEAGLView *eaglView = [CCEAGLView viewWithFrame: [UIScreen mainScreen].bounds];
     
     // Enable or disable multiple touches
     [eaglView setMultipleTouchEnabled:NO];
@@ -107,15 +101,8 @@
 }
 
 // Controls the application's preferred home indicator auto-hiding when this view controller is shown.
-// (better use preferredScreenEdgesDeferringSystemGestures for controlling the home indicator)
 - (BOOL)prefersHomeIndicatorAutoHidden {
-    return NO;
-}
-
-// HOME Indicator need to be tapped twice 
--(UIRectEdge)preferredScreenEdgesDeferringSystemGestures
-{
-    return UIRectEdgeBottom; 
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

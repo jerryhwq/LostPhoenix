@@ -1,8 +1,8 @@
 #ifndef __PHOENIXWEAPON_H__
 #define __PHOENIXWEAPON_H__
 
-#include"cocos2d.h"
-#include"Weapon.h"
+#include "cocos2d.h"
+#include "Weapon.h"
 USING_NS_CC;
 
 class PhoenixWeapon :public Weapon {

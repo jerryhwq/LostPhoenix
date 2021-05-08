@@ -1,8 +1,8 @@
 #ifndef __BOSS_H__
 #define __BOSS_H__
 
-#include"SpaceShip.h"
-#include"cocos2d.h"
+#include "SpaceShip.h"
+#include "cocos2d.h"
 USING_NS_CC;
 
 class Boss :public SpaceShip {

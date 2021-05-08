@@ -45,7 +45,7 @@ bool BossShip::getInfo()
 
 bool BossShip::isCollideWithShip(SpaceShip *spaceship)
 {
-	if (spaceship->boundingBox().intersectsRect(boundingBox()) == true) {
+	if (spaceship->getBoundingBox().intersectsRect(getBoundingBox()) == true) {
 		isCrashed = true;
 		return true;
 	}

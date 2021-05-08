@@ -1,8 +1,8 @@
 #ifndef __SPACESHIP_H__
 #define __SPACESHIP_H__
 
-#include"cocos2d.h"
-#include"Entity.h"
+#include "cocos2d.h"
+#include "Entity.h"
 
 USING_NS_CC;
 

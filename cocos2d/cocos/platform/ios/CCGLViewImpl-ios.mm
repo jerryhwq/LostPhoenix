@@ -23,10 +23,6 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-
-#include "platform/CCPlatformConfig.h"
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-
 #import <UIKit/UIKit.h>
 
 #include "platform/ios/CCEAGLView-ios.h"
@@ -37,9 +33,9 @@
 
 NS_CC_BEGIN
 
-void* GLViewImpl::_pixelFormat = kEAGLColorFormatRGB565;
-int GLViewImpl::_depthFormat = GL_DEPTH_COMPONENT16;
-int GLViewImpl::_multisamplingCount = 0;
+//void* GLViewImpl::_pixelFormat = kEAGLColorFormatRGB565;
+//int GLViewImpl::_depthFormat = GL_DEPTH_COMPONENT16;
+//int GLViewImpl::_multisamplingCount = 0;
 
 GLViewImpl* GLViewImpl::createWithEAGLView(void *eaglview)
 {
@@ -87,29 +83,29 @@ GLViewImpl* GLViewImpl::createWithFullScreen(const std::string& viewName)
 
 void GLViewImpl::convertAttrs()
 {
-    if(_glContextAttrs.redBits==8 && _glContextAttrs.greenBits==8 && _glContextAttrs.blueBits==8 && _glContextAttrs.alphaBits==8)
-    {
-        _pixelFormat = kEAGLColorFormatRGBA8;
-    } else if (_glContextAttrs.redBits==5 && _glContextAttrs.greenBits==6 && _glContextAttrs.blueBits==5 && _glContextAttrs.alphaBits==0)
-    {
-        _pixelFormat = kEAGLColorFormatRGB565;
-    } else
-    {
-        CCASSERT(0, "Unsupported render buffer pixel format. Using default");
-    }
+//    if(_glContextAttrs.redBits==8 && _glContextAttrs.greenBits==8 && _glContextAttrs.blueBits==8 && _glContextAttrs.alphaBits==8)
+//    {
+//        _pixelFormat = kEAGLColorFormatRGBA8;
+//    } else if (_glContextAttrs.redBits==5 && _glContextAttrs.greenBits==6 && _glContextAttrs.blueBits==5 && _glContextAttrs.alphaBits==0)
+//    {
+//        _pixelFormat = kEAGLColorFormatRGB565;
+//    } else
+//    {
+//        CCASSERT(0, "Unsupported render buffer pixel format. Using default");
+//    }
 
-    if(_glContextAttrs.depthBits==24 && _glContextAttrs.stencilBits==8)
-    {
-        _depthFormat = GL_DEPTH24_STENCIL8_OES;
-    } else if (_glContextAttrs.depthBits==0 && _glContextAttrs.stencilBits==0)
-    {
-        _depthFormat = 0;
-    } else
-    {
-        CCASSERT(0, "Unsupported format for depth and stencil buffers. Using default");
-    }
-    
-    _multisamplingCount = _glContextAttrs.multisamplingCount;
+//    if(_glContextAttrs.depthBits==24 && _glContextAttrs.stencilBits==8)
+//    {
+//        _depthFormat = GL_DEPTH24_STENCIL8_OES;
+//    } else if (_glContextAttrs.depthBits==0 && _glContextAttrs.stencilBits==0)
+//    {
+//        _depthFormat = 0;
+//    } else
+//    {
+//        CCASSERT(0, "Unsupported format for depth and stencil buffers. Using default");
+//    }
+
+//    _multisamplingCount = _glContextAttrs.multisamplingCount;
 }
 
 GLViewImpl::GLViewImpl()
@@ -138,13 +134,7 @@ bool GLViewImpl::initWithRect(const std::string& viewName, const Rect& rect, flo
 {
     CGRect r = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
     convertAttrs();
-    CCEAGLView *eaglview = [CCEAGLView viewWithFrame: r
-                                       pixelFormat: (NSString*)_pixelFormat
-                                       depthFormat: _depthFormat
-                                preserveBackbuffer: NO
-                                        sharegroup: nil
-                                     multiSampling: NO
-                                   numberOfSamples: 0];
+    CCEAGLView *eaglview = [CCEAGLView viewWithFrame: r];
 
     // Not available on tvOS
 #if !defined(CC_TARGET_OS_TVOS)
@@ -224,11 +214,11 @@ void GLViewImpl::setIMEKeyboardState(bool open)
 
     if (open)
     {
-        [eaglview becomeFirstResponder];
+        [eaglview showKeyboard];
     }
     else
     {
-        [eaglview resignFirstResponder];
+        [eaglview hideKeyboard];
     }
 }
 
@@ -280,5 +270,3 @@ Rect GLViewImpl::getSafeAreaRect() const
 }
 
 NS_CC_END
-
-#endif // CC_PLATFORM_IOS

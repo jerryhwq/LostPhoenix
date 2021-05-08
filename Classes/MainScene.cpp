@@ -1,6 +1,7 @@
 #include "MainScene.h"
 #include "extensions/cocos-ext.h"
-#include"SimpleAudioEngine.h"
+#include "editor-support/cocostudio/SimpleAudioEngine.h"
+#include "scripting/deprecated/CCDeprecated.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -41,7 +42,7 @@ bool MainScene::init()
 	hp = (LoadingBar*)Helper::seekWidgetByName(UI, "HP_bar");
 	exp = (LoadingBar*)Helper::seekWidgetByName(UI, "exp_bar");
 
-	exitButton->addTouchEventListener(this, toucheventselector(MainScene::onExitClick));
+	exitButton->addTouchEventListener(CC_CALLBACK_2(MainScene::onExitClick, this));
 
 	initBG();
 	//creat phoenix
@@ -83,7 +84,7 @@ bool MainScene::init()
 	weaponMgr->bindBossControlor(bossMgr);
 	
 	this->scheduleUpdate();
-	this->schedule(schedule_selector(MainScene::continueAttact), 0.25f);
+	this->schedule(CC_SCHEDULE_SELECTOR(MainScene::continueAttact), 0.25f);
 
 	return true;
 }
@@ -141,15 +142,15 @@ void MainScene::onKeyReleased(EventKeyboard::KeyCode keyCode, Event * event)
 	}
 }
 
-void MainScene::onExitClick(Ref *, TouchEventType type)
+void MainScene::onExitClick(Ref *, cocos2d::ui::Widget::TouchEventType type)
 {
 	switch (type)
 	{
-	case TouchEventType::TOUCH_EVENT_BEGAN:
+    case cocos2d::ui::Widget::TouchEventType::BEGAN:
 		break;
-	case TouchEventType::TOUCH_EVENT_MOVED:
+    case cocos2d::ui::Widget::TouchEventType::MOVED:
 		break;
-	case TouchEventType::TOUCH_EVENT_ENDED:
+    case cocos2d::ui::Widget::TouchEventType::ENDED:
 		Director::getInstance()->end();
 		break;
 	default:
@@ -311,12 +312,12 @@ void MainScene::update(float delta) {
 
 		m_phoenix->dead(); 
 		this->unscheduleUpdate();
-		this->scheduleOnce(schedule_selector(MainScene::gameOver), 1.5f);
+		this->scheduleOnce(CC_SCHEDULE_SELECTOR(MainScene::gameOver), 1.5f);
 	}
 	hp->setPercent(((float)(m_phoenix->getMaxHP() - m_phoenix->getHP()) / m_phoenix->getMaxHP()) * 100);
 	exp->setPercent(100*((float)((50 + 50 * m_phoenix->getLevel()) - m_phoenix->getExp()) / (50 + 50 * m_phoenix->getLevel())));
-	level->setText(Value(m_phoenix->getLevel()).asString());
-	score->setText(Value(m_phoenix->getScore()).asString());
+	level->setString(Value(m_phoenix->getLevel()).asString());
+	score->setString(Value(m_phoenix->getScore()).asString());
 	if(m_phoenix->getSideWeapon())
 		sideWeapon->setVisible(true);
 	else
@@ -333,7 +334,7 @@ void MainScene::update(float delta) {
 		m_BG2->setPositionY(m_BG2->getContentSize().height / 2 * 3);
 	if (m_phoenix->isBossDead) {
 		this->unscheduleUpdate();
-		this->scheduleOnce(schedule_selector(MainScene::gameWin), 1.5f);
+		this->scheduleOnce(CC_SCHEDULE_SELECTOR(MainScene::gameWin), 1.5f);
 	}
 }
 
@@ -359,11 +360,11 @@ void MainScene::gameOver(float dt)
 	menu->setPosition(Point(0, 0));
 	this->addChild(menu, 7);
 
-	auto score = Label::create("Final Score:", "Arial", 30);
+	auto score = Label::createWithSystemFont("Final Score:", "Arial", 30);
 	score->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2-30, Director::getInstance()->getVisibleSize().height / 2 - 125));
 	this->addChild(score, 7);
 
-	auto score2 = Label::create(Value(m_phoenix->getScore()).asString(), "Arial", 30);
+	auto score2 = Label::createWithSystemFont(Value(m_phoenix->getScore()).asString(), "Arial", 30);
 	score2->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2 +100, Director::getInstance()->getVisibleSize().height / 2 - 125));
 	this->addChild(score2, 7);
 
@@ -384,11 +385,11 @@ void MainScene::gameWin(float dt)
 	menu->setPosition(Point(0, 0));
 	this->addChild(menu, 7);
 
-	auto score = Label::create("Final Score:", "Arial", 30);
+	auto score = Label::createWithSystemFont("Final Score:", "Arial", 30);
 	score->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2 - 30, Director::getInstance()->getVisibleSize().height / 2 - 125));
 	this->addChild(score, 7);
 
-	auto score2 = Label::create(Value(m_phoenix->getScore()).asString(), "Arial", 30);
+	auto score2 = Label::createWithSystemFont(Value(m_phoenix->getScore()).asString(), "Arial", 30);
 	score2->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2 + 80, Director::getInstance()->getVisibleSize().height / 2 - 125));
 	this->addChild(score2, 7);
 }

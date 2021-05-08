@@ -1,8 +1,8 @@
 #ifndef __ENEMYONE_H__
 #define __ENEMYONE_H__
 
-#include"SpaceShip.h"
-#include"cocos2d.h"
+#include "SpaceShip.h"
+#include "cocos2d.h"
 USING_NS_CC;
 
 class EnemyOne :public SpaceShip {

@@ -57,7 +57,7 @@ Point Weapon::getStartPoint()
 
 bool Weapon::isCollideWithShip(SpaceShip *spaceship)
 {
-	if (spaceship->boundingBox().intersectsRect(boundingBox()) == true)
+	if (spaceship->getBoundingBox().intersectsRect(getBoundingBox()) == true)
 		return true;
 	else
 		return false;

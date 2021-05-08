@@ -1,7 +1,8 @@
 #include "BossControlor.h"
-#include"WeaponControlor.h"
-#include"Phoenix.h"
-#include"SimpleAudioEngine.h"
+#include "WeaponControlor.h"
+#include "Phoenix.h"
+#include "editor-support/cocostudio/SimpleAudioEngine.h"
+#include "scripting/deprecated/CCDeprecated.h"
 
 bool BossControlor::init()
 {
@@ -87,7 +88,7 @@ void BossControlor::update(float dt)
 			m_boss->dead();
 			m_phoenix->setScore(m_phoenix->getScore() + 1000* m_phoenix->getDifficulty());
 			m_phoenix->isBossDead = true;
-			unscheduleAllSelectors();
+			unscheduleAllCallbacks();
 			unscheduleUpdate();
 			if (m_boss->isCrashed == true)
 				m_phoenix->hit(99999);
@@ -101,12 +102,12 @@ void BossControlor::update(float dt)
 			m_boss->randonSet();
 			bossHp->setVisible(true);
 		}
-		this->schedule(schedule_selector(BossControlor::BossShipStartAttack), 5.0f);
-		this->schedule(schedule_selector(BossControlor::BossShipAttack), 0.32f);
-		this->schedule(schedule_selector(BossControlor::BossStartAttack), 6.0f);
-		this->schedule(schedule_selector(BossControlor::BossAttack), 1.0f);
-		this->schedule(schedule_selector(BossControlor::BossAttackPlus), 4.5f);
-		this->schedule(schedule_selector(BossControlor::creatBossShip), 2.5f);
+		this->schedule(CC_SCHEDULE_SELECTOR(BossControlor::BossShipStartAttack), 5.0f);
+		this->schedule(CC_SCHEDULE_SELECTOR(BossControlor::BossShipAttack), 0.32f);
+		this->schedule(CC_SCHEDULE_SELECTOR(BossControlor::BossStartAttack), 6.0f);
+		this->schedule(CC_SCHEDULE_SELECTOR(BossControlor::BossAttack), 1.0f);
+		this->schedule(CC_SCHEDULE_SELECTOR(BossControlor::BossAttackPlus), 4.5f);
+		this->schedule(CC_SCHEDULE_SELECTOR(BossControlor::creatBossShip), 2.5f);
 		m_phoenix->isBossAppear = true;
 	}
 	m_boss->setPositionX(m_boss->getPositionX() - ((m_boss->getPositionX() + 200 - m_phoenix->getPositionX() - 30) / (abs(m_boss->getPositionX() + 200 - m_phoenix->getPositionX() - 30)) * 1));
@@ -176,13 +177,13 @@ void BossControlor::BossAttackPlus(float dt)
 void BossControlor::BossShipStartAttack(float dt)
 {
 	isAttackShipEnabled = true;
-	scheduleOnce(schedule_selector(BossControlor::BossShipStopAttack), 0.8f);
+	scheduleOnce(CC_SCHEDULE_SELECTOR(BossControlor::BossShipStopAttack), 0.8f);
 }
 
 void BossControlor::BossStartAttack(float dt)
 {
 	isAttack1Enabled = true;
-	scheduleOnce(schedule_selector(BossControlor::BossStopAttack), 1.0f);
+	scheduleOnce(CC_SCHEDULE_SELECTOR(BossControlor::BossStopAttack), 1.0f);
 }
 
 void BossControlor::BossShipStopAttack(float dt)

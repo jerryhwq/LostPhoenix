@@ -1,5 +1,5 @@
-#include"Phoenix.h"
-#include"SimpleAudioEngine.h"
+#include "Phoenix.h"
+#include "editor-support/cocostudio/SimpleAudioEngine.h"
 
 Phoenix::Phoenix()
 {

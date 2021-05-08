@@ -1,5 +1,5 @@
 #include "Bonus.h"
-#include"Phoenix.h"
+#include "Phoenix.h"
 
 Bonus::Bonus()
 {
@@ -18,7 +18,7 @@ bool Bonus::init()
 
 bool Bonus::isCollideWithShip(Phoenix * phoenix)
 {
-	if (phoenix->boundingBox().intersectsRect(boundingBox()) == true) {
+	if (phoenix->getBoundingBox().intersectsRect(getBoundingBox()) == true) {
 		return true;
 	}
 	else

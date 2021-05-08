@@ -2,13 +2,13 @@
 #define __MAINSCENE_SCENE_H__
 
 #include "cocos2d.h"
-#include"editor-support/cocostudio/CCSGUIReader.h"
-#include"ui/CocosGUI.h"
-#include"Phoenix.h"
-#include"WeaponControlor.h"
-#include"EnemyControlor.h"
-#include"BonusControlor.h"
-#include"BossControlor.h"
+#include "editor-support/cocostudio/CCSGUIReader.h"
+#include "ui/CocosGUI.h"
+#include "Phoenix.h"
+#include "WeaponControlor.h"
+#include "EnemyControlor.h"
+#include "BonusControlor.h"
+#include "BossControlor.h"
 USING_NS_CC;
 using namespace cocos2d::ui;
 using namespace cocostudio;
@@ -25,7 +25,7 @@ public:
 
 	void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
 	void onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event);
-	void onExitClick(Ref*, TouchEventType type);
+    void onExitClick(Ref*, cocos2d::ui::Widget::TouchEventType type);
 	void menuCallRestart(cocos2d::Ref* pSender);
 
 	void phoenixBomb();

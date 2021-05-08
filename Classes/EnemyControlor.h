@@ -4,10 +4,10 @@
 #define ENEMYTWO_MAX_NUM 20
 #define ENEMYTHREE_MAX_NUM 2
 
-#include"cocos2d.h"
-#include"EnemyOne.h"
-#include"EnemyTwo.h"
-#include"EnemyThree.h"
+#include "cocos2d.h"
+#include "EnemyOne.h"
+#include "EnemyTwo.h"
+#include "EnemyThree.h"
 USING_NS_CC;
 
 class WeaponControlor;

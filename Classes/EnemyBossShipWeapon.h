@@ -1,8 +1,8 @@
 #ifndef _ENEMYBOSSSHIPWEAPON_H__
 #define _ENEMYBOSSSHIPWEAPON_H__
 
-#include"Weapon.h"
-#include"cocos2d.h"
+#include "Weapon.h"
+#include "cocos2d.h"
 USING_NS_CC;
 
 class EnemyBossShipWeapon :public Weapon {

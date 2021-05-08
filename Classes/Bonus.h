@@ -6,8 +6,8 @@
 #define BONUS_BOMB 3
 #define BONUS_SCORE 4
 
-#include"cocos2d.h"
-#include"Entity.h"
+#include "cocos2d.h"
+#include "Entity.h"
 
 USING_NS_CC;
 

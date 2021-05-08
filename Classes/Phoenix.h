@@ -1,8 +1,8 @@
 #ifndef __PHOENIX_H__
 #define __PHOENIX_H__
 
-#include"cocos2d.h"
-#include"SpaceShip.h"
+#include "cocos2d.h"
+#include "SpaceShip.h"
 
 USING_NS_CC;
 
