@@ -2,8 +2,8 @@
 #define __MAINSCENE_SCENE_H__
 
 #include "cocos2d.h"
-#include"editor-support\cocostudio\CCSGUIReader.h"
-#include"ui\CocosGUI.h"
+#include"editor-support/cocostudio/CCSGUIReader.h"
+#include"ui/CocosGUI.h"
 #include"Phoenix.h"
 #include"WeaponControlor.h"
 #include"EnemyControlor.h"

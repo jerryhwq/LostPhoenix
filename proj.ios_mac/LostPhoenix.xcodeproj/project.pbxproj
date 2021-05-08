@@ -21,16 +21,8 @@
 		294D0D641D0D56D500F7F5D4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294D0D631D0D56D500F7F5D4 /* CoreText.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
-		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
-		46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
-		46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
-		46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
-		46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7A19C43A67006E1F66 /* HelloWorld.png */; };
-		46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7A19C43A67006E1F66 /* HelloWorld.png */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
-		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
-		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
@@ -53,6 +45,60 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		E08C6F3D26462EA1000E773D /* EnemyBossWeapon2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0526462E9F000E773D /* EnemyBossWeapon2.cpp */; };
+		E08C6F3E26462EA1000E773D /* EnemyBossWeapon2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0526462E9F000E773D /* EnemyBossWeapon2.cpp */; };
+		E08C6F3F26462EA1000E773D /* BonusControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0626462E9F000E773D /* BonusControlor.cpp */; };
+		E08C6F4026462EA1000E773D /* BonusControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0626462E9F000E773D /* BonusControlor.cpp */; };
+		E08C6F4126462EA1000E773D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E08C6F0726462E9F000E773D /* README.md */; };
+		E08C6F4226462EA1000E773D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E08C6F0726462E9F000E773D /* README.md */; };
+		E08C6F4326462EA1000E773D /* PhoenixWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0A26462E9F000E773D /* PhoenixWeapon.cpp */; };
+		E08C6F4426462EA1000E773D /* PhoenixWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0A26462E9F000E773D /* PhoenixWeapon.cpp */; };
+		E08C6F4526462EA1000E773D /* EnemyThreeWeaponPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0B26462E9F000E773D /* EnemyThreeWeaponPlus.cpp */; };
+		E08C6F4626462EA1000E773D /* EnemyThreeWeaponPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0B26462E9F000E773D /* EnemyThreeWeaponPlus.cpp */; };
+		E08C6F4726462EA1000E773D /* Boss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0E26462E9F000E773D /* Boss.cpp */; };
+		E08C6F4826462EA1000E773D /* Boss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F0E26462E9F000E773D /* Boss.cpp */; };
+		E08C6F4926462EA1000E773D /* SideWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1126462E9F000E773D /* SideWeapon.cpp */; };
+		E08C6F4A26462EA1000E773D /* SideWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1126462E9F000E773D /* SideWeapon.cpp */; };
+		E08C6F4B26462EA1000E773D /* WeaponControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1226462E9F000E773D /* WeaponControlor.cpp */; };
+		E08C6F4C26462EA1000E773D /* WeaponControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1226462E9F000E773D /* WeaponControlor.cpp */; };
+		E08C6F4D26462EA1000E773D /* BossShip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1326462E9F000E773D /* BossShip.cpp */; };
+		E08C6F4E26462EA1000E773D /* BossShip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1326462E9F000E773D /* BossShip.cpp */; };
+		E08C6F4F26462EA1000E773D /* Phoenix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1426462EA0000E773D /* Phoenix.cpp */; };
+		E08C6F5026462EA1000E773D /* Phoenix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1426462EA0000E773D /* Phoenix.cpp */; };
+		E08C6F5126462EA1000E773D /* EnemyControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1526462EA0000E773D /* EnemyControlor.cpp */; };
+		E08C6F5226462EA1000E773D /* EnemyControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1526462EA0000E773D /* EnemyControlor.cpp */; };
+		E08C6F5326462EA1000E773D /* EnemyBossWeapon1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1826462EA0000E773D /* EnemyBossWeapon1.cpp */; };
+		E08C6F5426462EA1000E773D /* EnemyBossWeapon1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1826462EA0000E773D /* EnemyBossWeapon1.cpp */; };
+		E08C6F5526462EA1000E773D /* SpaceShip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1926462EA0000E773D /* SpaceShip.cpp */; };
+		E08C6F5626462EA1000E773D /* SpaceShip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1926462EA0000E773D /* SpaceShip.cpp */; };
+		E08C6F5726462EA1000E773D /* BonusBomb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1F26462EA0000E773D /* BonusBomb.cpp */; };
+		E08C6F5826462EA1000E773D /* BonusBomb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F1F26462EA0000E773D /* BonusBomb.cpp */; };
+		E08C6F5926462EA1000E773D /* BossControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2326462EA0000E773D /* BossControlor.cpp */; };
+		E08C6F5A26462EA1000E773D /* BossControlor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2326462EA0000E773D /* BossControlor.cpp */; };
+		E08C6F5B26462EA1000E773D /* EnemyWeapon1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2426462EA0000E773D /* EnemyWeapon1.cpp */; };
+		E08C6F5C26462EA1000E773D /* EnemyWeapon1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2426462EA0000E773D /* EnemyWeapon1.cpp */; };
+		E08C6F5D26462EA1000E773D /* EnemyThreeWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2526462EA0000E773D /* EnemyThreeWeapon.cpp */; };
+		E08C6F5E26462EA1000E773D /* EnemyThreeWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2526462EA0000E773D /* EnemyThreeWeapon.cpp */; };
+		E08C6F5F26462EA1000E773D /* EnemyBossShipWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2726462EA0000E773D /* EnemyBossShipWeapon.cpp */; };
+		E08C6F6026462EA1000E773D /* EnemyBossShipWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2726462EA0000E773D /* EnemyBossShipWeapon.cpp */; };
+		E08C6F6126462EA1000E773D /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2826462EA0000E773D /* Weapon.cpp */; };
+		E08C6F6226462EA1000E773D /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2826462EA0000E773D /* Weapon.cpp */; };
+		E08C6F6326462EA1000E773D /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2926462EA0000E773D /* MainScene.cpp */; };
+		E08C6F6426462EA1000E773D /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2926462EA0000E773D /* MainScene.cpp */; };
+		E08C6F6526462EA1000E773D /* BonusLife.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2B26462EA0000E773D /* BonusLife.cpp */; };
+		E08C6F6626462EA1000E773D /* BonusLife.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2B26462EA0000E773D /* BonusLife.cpp */; };
+		E08C6F6726462EA1000E773D /* EnemyTwoWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2C26462EA0000E773D /* EnemyTwoWeapon.cpp */; };
+		E08C6F6826462EA1000E773D /* EnemyTwoWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2C26462EA0000E773D /* EnemyTwoWeapon.cpp */; };
+		E08C6F6926462EA1000E773D /* EnemyThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2E26462EA0000E773D /* EnemyThree.cpp */; };
+		E08C6F6A26462EA1000E773D /* EnemyThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F2E26462EA0000E773D /* EnemyThree.cpp */; };
+		E08C6F6D26462EA1000E773D /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3526462EA1000E773D /* Entity.cpp */; };
+		E08C6F6E26462EA1000E773D /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3526462EA1000E773D /* Entity.cpp */; };
+		E08C6F6F26462EA1000E773D /* EnemyTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3A26462EA1000E773D /* EnemyTwo.cpp */; };
+		E08C6F7026462EA1000E773D /* EnemyTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3A26462EA1000E773D /* EnemyTwo.cpp */; };
+		E08C6F7126462EA1000E773D /* EnemyOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3B26462EA1000E773D /* EnemyOne.cpp */; };
+		E08C6F7226462EA1000E773D /* EnemyOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3B26462EA1000E773D /* EnemyOne.cpp */; };
+		E08C6F7326462EA1000E773D /* Bonus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3C26462EA1000E773D /* Bonus.cpp */; };
+		E08C6F7426462EA1000E773D /* Bonus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C6F3C26462EA1000E773D /* Bonus.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -114,13 +160,8 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		294D0D631D0D56D500F7F5D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
-		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
-		46880B7719C43A67006E1F66 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
-		46880B7A19C43A67006E1F66 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
@@ -140,6 +181,60 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		E08C6F0526462E9F000E773D /* EnemyBossWeapon2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyBossWeapon2.cpp; sourceTree = "<group>"; };
+		E08C6F0626462E9F000E773D /* BonusControlor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BonusControlor.cpp; sourceTree = "<group>"; };
+		E08C6F0726462E9F000E773D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E08C6F0826462E9F000E773D /* EnemyTwoWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyTwoWeapon.h; sourceTree = "<group>"; };
+		E08C6F0926462E9F000E773D /* BonusBomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusBomb.h; sourceTree = "<group>"; };
+		E08C6F0A26462E9F000E773D /* PhoenixWeapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhoenixWeapon.cpp; sourceTree = "<group>"; };
+		E08C6F0B26462E9F000E773D /* EnemyThreeWeaponPlus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyThreeWeaponPlus.cpp; sourceTree = "<group>"; };
+		E08C6F0C26462E9F000E773D /* SpaceShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceShip.h; sourceTree = "<group>"; };
+		E08C6F0D26462E9F000E773D /* EnemyBossWeapon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyBossWeapon2.h; sourceTree = "<group>"; };
+		E08C6F0E26462E9F000E773D /* Boss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Boss.cpp; sourceTree = "<group>"; };
+		E08C6F0F26462E9F000E773D /* EnemyThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyThree.h; sourceTree = "<group>"; };
+		E08C6F1026462E9F000E773D /* BonusControlor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusControlor.h; sourceTree = "<group>"; };
+		E08C6F1126462E9F000E773D /* SideWeapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SideWeapon.cpp; sourceTree = "<group>"; };
+		E08C6F1226462E9F000E773D /* WeaponControlor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeaponControlor.cpp; sourceTree = "<group>"; };
+		E08C6F1326462E9F000E773D /* BossShip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BossShip.cpp; sourceTree = "<group>"; };
+		E08C6F1426462EA0000E773D /* Phoenix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Phoenix.cpp; sourceTree = "<group>"; };
+		E08C6F1526462EA0000E773D /* EnemyControlor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyControlor.cpp; sourceTree = "<group>"; };
+		E08C6F1726462EA0000E773D /* Phoenix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phoenix.h; sourceTree = "<group>"; };
+		E08C6F1826462EA0000E773D /* EnemyBossWeapon1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyBossWeapon1.cpp; sourceTree = "<group>"; };
+		E08C6F1926462EA0000E773D /* SpaceShip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpaceShip.cpp; sourceTree = "<group>"; };
+		E08C6F1A26462EA0000E773D /* EnemyControlor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyControlor.h; sourceTree = "<group>"; };
+		E08C6F1B26462EA0000E773D /* EnemyThreeWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyThreeWeapon.h; sourceTree = "<group>"; };
+		E08C6F1C26462EA0000E773D /* EnemyOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyOne.h; sourceTree = "<group>"; };
+		E08C6F1D26462EA0000E773D /* BonusLife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusLife.h; sourceTree = "<group>"; };
+		E08C6F1E26462EA0000E773D /* EnemyTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyTwo.h; sourceTree = "<group>"; };
+		E08C6F1F26462EA0000E773D /* BonusBomb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BonusBomb.cpp; sourceTree = "<group>"; };
+		E08C6F2026462EA0000E773D /* SideWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideWeapon.h; sourceTree = "<group>"; };
+		E08C6F2126462EA0000E773D /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boss.h; sourceTree = "<group>"; };
+		E08C6F2226462EA0000E773D /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		E08C6F2326462EA0000E773D /* BossControlor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BossControlor.cpp; sourceTree = "<group>"; };
+		E08C6F2426462EA0000E773D /* EnemyWeapon1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyWeapon1.cpp; sourceTree = "<group>"; };
+		E08C6F2526462EA0000E773D /* EnemyThreeWeapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyThreeWeapon.cpp; sourceTree = "<group>"; };
+		E08C6F2626462EA0000E773D /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		E08C6F2726462EA0000E773D /* EnemyBossShipWeapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyBossShipWeapon.cpp; sourceTree = "<group>"; };
+		E08C6F2826462EA0000E773D /* Weapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Weapon.cpp; sourceTree = "<group>"; };
+		E08C6F2926462EA0000E773D /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
+		E08C6F2A26462EA0000E773D /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		E08C6F2B26462EA0000E773D /* BonusLife.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BonusLife.cpp; sourceTree = "<group>"; };
+		E08C6F2C26462EA0000E773D /* EnemyTwoWeapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyTwoWeapon.cpp; sourceTree = "<group>"; };
+		E08C6F2D26462EA0000E773D /* WeaponControlor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponControlor.h; sourceTree = "<group>"; };
+		E08C6F2E26462EA0000E773D /* EnemyThree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyThree.cpp; sourceTree = "<group>"; };
+		E08C6F2F26462EA0000E773D /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
+		E08C6F3026462EA0000E773D /* PhoenixWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoenixWeapon.h; sourceTree = "<group>"; };
+		E08C6F3126462EA0000E773D /* BossControlor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BossControlor.h; sourceTree = "<group>"; };
+		E08C6F3226462EA1000E773D /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		E08C6F3326462EA1000E773D /* EnemyBossShipWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyBossShipWeapon.h; sourceTree = "<group>"; };
+		E08C6F3526462EA1000E773D /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		E08C6F3626462EA1000E773D /* BossShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BossShip.h; sourceTree = "<group>"; };
+		E08C6F3726462EA1000E773D /* EnemyWeapon1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyWeapon1.h; sourceTree = "<group>"; };
+		E08C6F3826462EA1000E773D /* EnemyBossWeapon1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyBossWeapon1.h; sourceTree = "<group>"; };
+		E08C6F3926462EA1000E773D /* EnemyThreeWeaponPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyThreeWeaponPlus.h; sourceTree = "<group>"; };
+		E08C6F3A26462EA1000E773D /* EnemyTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyTwo.cpp; sourceTree = "<group>"; };
+		E08C6F3B26462EA1000E773D /* EnemyOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyOne.cpp; sourceTree = "<group>"; };
+		E08C6F3C26462EA1000E773D /* Bonus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bonus.cpp; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -270,9 +365,6 @@
 			children = (
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
-				46880B7619C43A67006E1F66 /* CloseNormal.png */,
-				46880B7719C43A67006E1F66 /* CloseSelected.png */,
-				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -281,10 +373,62 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E08C6F3C26462EA1000E773D /* Bonus.cpp */,
+				E08C6F2F26462EA0000E773D /* Bonus.h */,
+				E08C6F1F26462EA0000E773D /* BonusBomb.cpp */,
+				E08C6F0926462E9F000E773D /* BonusBomb.h */,
+				E08C6F0626462E9F000E773D /* BonusControlor.cpp */,
+				E08C6F1026462E9F000E773D /* BonusControlor.h */,
+				E08C6F2B26462EA0000E773D /* BonusLife.cpp */,
+				E08C6F1D26462EA0000E773D /* BonusLife.h */,
+				E08C6F0E26462E9F000E773D /* Boss.cpp */,
+				E08C6F2126462EA0000E773D /* Boss.h */,
+				E08C6F2326462EA0000E773D /* BossControlor.cpp */,
+				E08C6F3126462EA0000E773D /* BossControlor.h */,
+				E08C6F1326462E9F000E773D /* BossShip.cpp */,
+				E08C6F3626462EA1000E773D /* BossShip.h */,
+				E08C6F2726462EA0000E773D /* EnemyBossShipWeapon.cpp */,
+				E08C6F3326462EA1000E773D /* EnemyBossShipWeapon.h */,
+				E08C6F1826462EA0000E773D /* EnemyBossWeapon1.cpp */,
+				E08C6F3826462EA1000E773D /* EnemyBossWeapon1.h */,
+				E08C6F0526462E9F000E773D /* EnemyBossWeapon2.cpp */,
+				E08C6F0D26462E9F000E773D /* EnemyBossWeapon2.h */,
+				E08C6F1526462EA0000E773D /* EnemyControlor.cpp */,
+				E08C6F1A26462EA0000E773D /* EnemyControlor.h */,
+				E08C6F3B26462EA1000E773D /* EnemyOne.cpp */,
+				E08C6F1C26462EA0000E773D /* EnemyOne.h */,
+				E08C6F2E26462EA0000E773D /* EnemyThree.cpp */,
+				E08C6F0F26462E9F000E773D /* EnemyThree.h */,
+				E08C6F2526462EA0000E773D /* EnemyThreeWeapon.cpp */,
+				E08C6F1B26462EA0000E773D /* EnemyThreeWeapon.h */,
+				E08C6F0B26462E9F000E773D /* EnemyThreeWeaponPlus.cpp */,
+				E08C6F3926462EA1000E773D /* EnemyThreeWeaponPlus.h */,
+				E08C6F3A26462EA1000E773D /* EnemyTwo.cpp */,
+				E08C6F1E26462EA0000E773D /* EnemyTwo.h */,
+				E08C6F2C26462EA0000E773D /* EnemyTwoWeapon.cpp */,
+				E08C6F0826462E9F000E773D /* EnemyTwoWeapon.h */,
+				E08C6F2426462EA0000E773D /* EnemyWeapon1.cpp */,
+				E08C6F3726462EA1000E773D /* EnemyWeapon1.h */,
+				E08C6F3526462EA1000E773D /* Entity.cpp */,
+				E08C6F2626462EA0000E773D /* Entity.h */,
+				E08C6F2926462EA0000E773D /* MainScene.cpp */,
+				E08C6F3226462EA1000E773D /* MainScene.h */,
+				E08C6F1426462EA0000E773D /* Phoenix.cpp */,
+				E08C6F1726462EA0000E773D /* Phoenix.h */,
+				E08C6F0A26462E9F000E773D /* PhoenixWeapon.cpp */,
+				E08C6F3026462EA0000E773D /* PhoenixWeapon.h */,
+				E08C6F0726462E9F000E773D /* README.md */,
+				E08C6F2226462EA0000E773D /* resource.h */,
+				E08C6F1126462E9F000E773D /* SideWeapon.cpp */,
+				E08C6F2026462EA0000E773D /* SideWeapon.h */,
+				E08C6F1926462EA0000E773D /* SpaceShip.cpp */,
+				E08C6F0C26462E9F000E773D /* SpaceShip.h */,
+				E08C6F2826462EA0000E773D /* Weapon.cpp */,
+				E08C6F2A26462EA0000E773D /* Weapon.h */,
+				E08C6F1226462E9F000E773D /* WeaponControlor.cpp */,
+				E08C6F2D26462EA0000E773D /* WeaponControlor.h */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
-				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -356,6 +500,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LostPhoenix" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -412,13 +561,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
+				E08C6F4126462EA1000E773D /* README.md in Resources */,
 				1A88B2641FC3D9C9005C14AE /* Images.xcassets in Resources */,
-				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				1AF87B891F6F781D007BE51C /* LaunchScreenBackground.png in Resources */,
-				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				1AF87B881F6F781D007BE51C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,12 +574,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
+				E08C6F4226462EA1000E773D /* README.md in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
-				46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */,
-				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,11 +588,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08C6F4726462EA1000E773D /* Boss.cpp in Sources */,
+				E08C6F5D26462EA1000E773D /* EnemyThreeWeapon.cpp in Sources */,
+				E08C6F5926462EA1000E773D /* BossControlor.cpp in Sources */,
+				E08C6F3F26462EA1000E773D /* BonusControlor.cpp in Sources */,
+				E08C6F4F26462EA1000E773D /* Phoenix.cpp in Sources */,
+				E08C6F7326462EA1000E773D /* Bonus.cpp in Sources */,
+				E08C6F6326462EA1000E773D /* MainScene.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
+				E08C6F5326462EA1000E773D /* EnemyBossWeapon1.cpp in Sources */,
+				E08C6F6126462EA1000E773D /* Weapon.cpp in Sources */,
+				E08C6F6926462EA1000E773D /* EnemyThree.cpp in Sources */,
+				E08C6F6726462EA1000E773D /* EnemyTwoWeapon.cpp in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
+				E08C6F5126462EA1000E773D /* EnemyControlor.cpp in Sources */,
+				E08C6F5B26462EA1000E773D /* EnemyWeapon1.cpp in Sources */,
+				E08C6F5F26462EA1000E773D /* EnemyBossShipWeapon.cpp in Sources */,
+				E08C6F6F26462EA1000E773D /* EnemyTwo.cpp in Sources */,
+				E08C6F6526462EA1000E773D /* BonusLife.cpp in Sources */,
+				E08C6F6D26462EA1000E773D /* Entity.cpp in Sources */,
+				E08C6F4D26462EA1000E773D /* BossShip.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				E08C6F5726462EA1000E773D /* BonusBomb.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
-				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				E08C6F7126462EA1000E773D /* EnemyOne.cpp in Sources */,
+				E08C6F4526462EA1000E773D /* EnemyThreeWeaponPlus.cpp in Sources */,
+				E08C6F4326462EA1000E773D /* PhoenixWeapon.cpp in Sources */,
+				E08C6F4B26462EA1000E773D /* WeaponControlor.cpp in Sources */,
+				E08C6F4926462EA1000E773D /* SideWeapon.cpp in Sources */,
+				E08C6F5526462EA1000E773D /* SpaceShip.cpp in Sources */,
+				E08C6F3D26462EA1000E773D /* EnemyBossWeapon2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,9 +625,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08C6F5626462EA1000E773D /* SpaceShip.cpp in Sources */,
+				E08C6F5426462EA1000E773D /* EnemyBossWeapon1.cpp in Sources */,
+				E08C6F4026462EA1000E773D /* BonusControlor.cpp in Sources */,
+				E08C6F4626462EA1000E773D /* EnemyThreeWeaponPlus.cpp in Sources */,
+				E08C6F4426462EA1000E773D /* PhoenixWeapon.cpp in Sources */,
+				E08C6F6A26462EA1000E773D /* EnemyThree.cpp in Sources */,
+				E08C6F7426462EA1000E773D /* Bonus.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				E08C6F5826462EA1000E773D /* BonusBomb.cpp in Sources */,
+				E08C6F3E26462EA1000E773D /* EnemyBossWeapon2.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				E08C6F4E26462EA1000E773D /* BossShip.cpp in Sources */,
+				E08C6F5226462EA1000E773D /* EnemyControlor.cpp in Sources */,
+				E08C6F6426462EA1000E773D /* MainScene.cpp in Sources */,
+				E08C6F6026462EA1000E773D /* EnemyBossShipWeapon.cpp in Sources */,
+				E08C6F5A26462EA1000E773D /* BossControlor.cpp in Sources */,
+				E08C6F4A26462EA1000E773D /* SideWeapon.cpp in Sources */,
+				E08C6F7226462EA1000E773D /* EnemyOne.cpp in Sources */,
+				E08C6F7026462EA1000E773D /* EnemyTwo.cpp in Sources */,
+				E08C6F4826462EA1000E773D /* Boss.cpp in Sources */,
+				E08C6F4C26462EA1000E773D /* WeaponControlor.cpp in Sources */,
+				E08C6F6826462EA1000E773D /* EnemyTwoWeapon.cpp in Sources */,
+				E08C6F5C26462EA1000E773D /* EnemyWeapon1.cpp in Sources */,
+				E08C6F6226462EA1000E773D /* Weapon.cpp in Sources */,
+				E08C6F6E26462EA1000E773D /* Entity.cpp in Sources */,
+				E08C6F6626462EA1000E773D /* BonusLife.cpp in Sources */,
+				E08C6F5026462EA1000E773D /* Phoenix.cpp in Sources */,
+				E08C6F5E26462EA1000E773D /* EnemyThreeWeapon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +678,12 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = arm64;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -497,17 +696,18 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
-				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -517,8 +717,12 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = arm64;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
@@ -530,17 +734,18 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
-				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
@@ -623,8 +828,8 @@
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 					"$(SRCROOT)/../cocos2d/cocos/editor-support",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -647,8 +852,8 @@
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 					"$(SRCROOT)/../cocos2d/cocos/editor-support",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

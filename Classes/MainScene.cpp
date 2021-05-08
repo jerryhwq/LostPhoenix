@@ -48,8 +48,8 @@ bool MainScene::init()
 	m_phoenix = Phoenix::create();
 	m_phoenix->bindSprite(Sprite::create("./texture/Phoenix.png"));
 	m_phoenix->setPosition(Point(visibleSize.width / 2-30, 0));
-	extern int difficulty;
-	m_phoenix->setDifficulty(difficulty);
+//	extern int difficulty;
+	m_phoenix->setDifficulty(1);
 	this->addChild(m_phoenix, 3);
 	m_phoenix->setValue(0, 50, 50, 8);
 
@@ -105,8 +105,7 @@ void MainScene::onKeyPressed(EventKeyboard::KeyCode keyCode, Event * event)
 	case cocos2d::EventKeyboard::KeyCode::KEY_DOWN_ARROW:
 		isSpressed = true;
 		break;
-	case cocos2d::EventKeyboard::KeyCode::KEY_LEFT_ARROW
-:
+	case cocos2d::EventKeyboard::KeyCode::KEY_LEFT_ARROW:
 		isApressed = true;
 		break;
 	case cocos2d::EventKeyboard::KeyCode::KEY_X:
@@ -347,7 +346,7 @@ void MainScene::continueAttact(float dt)
 void MainScene::gameOver(float dt)
 {
 	CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic(true);
-	Sprite*overItem = Sprite::create("./texture/overItem.png");
+	Sprite*overItem = Sprite::create("./texture/OverItem.png");
 	overItem->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height / 2));
 	this->addChild(overItem, 7);
 
